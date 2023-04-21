@@ -4,6 +4,7 @@ from flask import Flask, render_template, request
 import tensorflow as tf
 import cv2
 
+
 model = tf.keras.models.load_model('./Model/my_model.keras')
 
 # Show the model architecture

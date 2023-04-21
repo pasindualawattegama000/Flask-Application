@@ -1,4 +1,4 @@
 Flask
 Gunicorn
 tensorflow
-cv2
+opencv-python
