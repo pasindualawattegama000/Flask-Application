@@ -1,13 +1,10 @@
 from flask import Flask, render_template, request
 
-# from keras.preprocessing.image import load_img
-# from keras.preprocessing.image import img_to_array
 
 import tensorflow as tf
 import cv2
 
-model = tf.keras.models.load_model(
-    'C:/Users/pasin/Desktop/ML website/Model/my_model.keras')
+model = tf.keras.models.load_model('./Model/my_model.keras')
 
 # Show the model architecture
 # model.summary()
@@ -46,4 +43,4 @@ def predict():
 
 
 if __name__ == '__main__':
-    app.run(port=3000, debug=True)
+    app.run(port='0.0.0.0', debug=True)
