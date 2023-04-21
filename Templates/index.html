@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ML test</title>
+
+    <style>
+      .perdictBTN {
+        background-color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">Image Classifier</h1>
+    <br />
+    <form align="center" action="/" method="post" enctype="multipart/form-data">
+      <input type="file" name="imagefile" />
+      <input
+        class="perdictBTN"
+        color="blue"
+        type="submit"
+        value="Predict image"
+      />
+    </form>
+
+    {% if prediction %}
+    <p align="center">Our model says its a {{prediction}}</p>
+
+    {% endif %}
+  </body>
+</html>
